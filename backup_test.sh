@@ -9,7 +9,7 @@ BACKUP_FILENAME="backup_$BACKUP_DATE.tar.gz"
 mkdir -p "$BACKUP_DST/$BACKUP_DATE"
 
 # Archive the src dir
-tar -czf "$BACKUP_DST/$BACKUP_DATE_/$BACKUP_FILENAME" "$BACKUP_SRC"
+tar -czf "$BACKUP_DST/$BACKUP_DATE/$BACKUP_FILENAME" "$BACKUP_SRC"
 
 # Verify if backup succeded
 if [ $? -eq 0 ]; then
